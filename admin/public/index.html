@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride-Hailing Admin Dashboard</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <h2>🚖 Ride-Hailing Live Tracking Dashboard</h2>
+        <div class="subtitle">Admin Control Panel — Monitoring active driver and passenger requests.</div>
+        
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Check-ins</h3>
+                <div id="stat-total" class="stat-number">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Drivers</h3>
+                <div id="stat-drivers" class="stat-number text-teal">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Active Passengers</h3>
+                <div id="stat-passengers" class="stat-number text-orange">0</div>
+            </div>
+        </div>
+
+        <div id="map"></div>
+
+        <div class="controls-container">
+            <h3>Check-in Log Records</h3>
+            <div class="filter-group">
+                <input type="text" id="searchInput" placeholder="🔍 Search by username...">
+                <select id="roleFilter">
+                    <option value="all">All Roles</option>
+                    <option value="driver">Drivers Only</option>
+                    <option value="passenger">Passengers Only</option>
+                </select>
+            </div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Username</th>
+                    <th>User Role</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>IP Address</th>
+                    <th>Time Captured</th>
+                    <th>Action</th> </tr>
+            </thead>
+            <tbody id="logTableBody">
+                </tbody>
+        </table>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
