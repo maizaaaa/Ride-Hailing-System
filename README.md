@@ -9,11 +9,13 @@ This project allows Drivers and Passengers to check in their live GPS locations,
 ## 📸 Screenshots
 
 ### Mobile App (Flutter)
-![Flutter App Screenshot (Passanger)]( <img width="1650" height="1275" alt="passagers" src="https://github.com/user-attachments/assets/ee06fe64-659a-466e-a426-d5dcc94b4f08" />
-)
+![Flutter App Screenshot (Passanger)]
+<img width="1650" height="1275" alt="passagers" src="https://github.com/user-attachments/assets/2e8c0d1f-c169-4aa4-98e1-2b3bcf9dec3c" />
 
-![Flutter App Screenshot (Driver)] ( <img width="3300" height="2550" alt="driver" src="https://github.com/user-attachments/assets/854711c7-f1f3-493e-b8bd-e0ca586dab85" />
-)
+
+![Flutter App Screenshot (Driver)] 
+<img width="3300" height="2550" alt="driver" src="https://github.com/user-attachments/assets/854711c7-f1f3-493e-b8bd-e0ca586dab85" />
+
 
 **📱 Mobile App (Drivers & Passengers)**
 * **Role Selection:** Users can securely log in as either a Passenger or a Driver.
@@ -21,7 +23,9 @@ This project allows Drivers and Passengers to check in their live GPS locations,
 * **Server Synchronization:** Sends real-time timestamped location data to the central database.
 
 ### Admin Control Panel (Web)
-![Admin Dashboard Screenshot](put-your-admin-image-link-here.jpg)
+![Admin Dashboard Screenshot]
+<img width="902" height="491" alt="Screenshot 2026-06-04 215558" src="https://github.com/user-attachments/assets/4916f65b-2dea-4126-a22c-60d3a78a1d2c" />
+
 
 **💻 Admin Dashboard**
 * **Interactive Map:** Live plotting of all active users using OpenStreetMap and Leaflet.js.
