@@ -4,18 +4,14 @@ A complete full-stack ride-hailing solution featuring a cross-platform mobile ap
 
 This project allows Drivers and Passengers to check in their live GPS locations, which are instantly synchronized and plotted on an interactive map for admins to monitor.
 
----
-
 ## 📸 Screenshots
 
 ### Mobile App (Flutter)
-![Flutter App Screenshot (Passanger)]
-<img width="1650" height="1275" alt="passagers" src="https://github.com/user-attachments/assets/2e8c0d1f-c169-4aa4-98e1-2b3bcf9dec3c" />
 
-
-![Flutter App Screenshot (Driver)] 
-<img width="3300" height="2550" alt="driver" src="https://github.com/user-attachments/assets/854711c7-f1f3-493e-b8bd-e0ca586dab85" />
-
+|  Role | Output |
+|---------------|----------------|
+| Passanger | <img width="1650" height="1275" alt="passagers" src="https://github.com/user-attachments/assets/2e8c0d1f-c169-4aa4-98e1-2b3bcf9dec3c" /> |
+| Driver | <img width="3300" height="2550" alt="driver" src="https://github.com/user-attachments/assets/854711c7-f1f3-493e-b8bd-e0ca586dab85" /> |
 
 **📱 Mobile App (Drivers & Passengers)**
 * **Role Selection:** Users can securely log in as either a Passenger or a Driver.
@@ -23,9 +19,10 @@ This project allows Drivers and Passengers to check in their live GPS locations,
 * **Server Synchronization:** Sends real-time timestamped location data to the central database.
 
 ### Admin Control Panel (Web)
-![Admin Dashboard Screenshot]
-<img width="902" height="491" alt="Screenshot 2026-06-04 215558" src="https://github.com/user-attachments/assets/4916f65b-2dea-4126-a22c-60d3a78a1d2c" />
 
+  Role | Output |
+|---------------|----------------|
+| Admin | <img width="902" height="491" alt="Screenshot 2026-06-04 215558" src="https://github.com/user-attachments/assets/4916f65b-2dea-4126-a22c-60d3a78a1d2c" /> |
 
 **💻 Admin Dashboard**
 * **Interactive Map:** Live plotting of all active users using OpenStreetMap and Leaflet.js.
@@ -33,7 +30,6 @@ This project allows Drivers and Passengers to check in their live GPS locations,
 * **Smart Filtering:** Search users by name or filter the table by specific roles without refreshing the page.
 * **Click-to-Locate:** Instantly pan the map to a specific user's location with the click of a button.
 
----
 
 ## 🛠️ Tech Stack
 
@@ -41,8 +37,6 @@ This project allows Drivers and Passengers to check in their live GPS locations,
 * **Frontend (Web):** HTML5, CSS3, Vanilla JavaScript, Leaflet.js
 * **Backend API:** PHP 8+
 * **Database:** MySQL
-
----
 
 ## 🚀 Getting Started
 
@@ -64,5 +58,3 @@ This project allows Drivers and Passengers to check in their live GPS locations,
 2. Run `flutter pub get` to install dependencies.
 3. **Important:** Open `lib/main.dart` and update the `http.post` URL to match your computer's local Wi-Fi IP address (e.g., `http://192.168.1.X/admin/api.php`).
 4. Run the app on an emulator or physical device using `flutter run`.
-
----
