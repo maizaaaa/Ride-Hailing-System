@@ -215,7 +215,7 @@ class _CheckInPageState extends State<CheckInPage> {
   String locationText = "Tap below to capture";
   String timeText = "-- : --";
   String statusText = "Ready for check-in";
-  bool isLoading = false; // Added to show loading spinner
+  bool isLoading = false; 
 
   Future<void> checkInLocation() async {
   setState(() {
@@ -257,25 +257,26 @@ class _CheckInPageState extends State<CheckInPage> {
 
     DateTime malaysiaTime = DateTime.now().toUtc().add(const Duration(hours: 8));
 
-    // 1. For the UI display (Human readable)
     String displayTime = DateFormat('dd MMM yyyy, HH:mm:ss').format(malaysiaTime);
     
-    // 2. For the Database API (MySQL strict format)
     String dbTime = DateFormat('yyyy-MM-dd HH:mm:ss').format(malaysiaTime); 
 
     setState(() {
       locationText = "${position.latitude.toStringAsFixed(6)}, ${position.longitude.toStringAsFixed(6)}";
-      timeText = displayTime; // Show the nice format on the screen
+      timeText = displayTime; 
       statusText = "Synchronizing with Server...";
     });
 
     final response = await http.post(
-      Uri.parse('http://192.168.0.7/RIDE-HAILING/api.php'), // Or your IP/Port config
+      Uri.parse('https://yahoo-prewar-kitten.ngrok-free.dev/RIDE-HAILING/api.php'), 
+      headers:{
+        "ngrok-skip-browser-warning": "69420",
+      },
       body: {
         'username': widget.username,
         'role': widget.role,
         'location': locationText,
-        'time': dbTime, // Send the STRICT format to the server!
+        'time': dbTime, 
       },
     );
 
